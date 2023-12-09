@@ -1,0 +1,242 @@
+/* Estilo para el encabezado */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header h1 {
+	margin: 0;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+
+	align-items: center;
+}
+
+#ContenidoB {
+	margin-left: 5%;
+	text-align: justify;
+
+}
+#results h1{
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#consultar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#results {
+	text-align: justify;
+	max-width: 500px;
+	margin: 0 auto;
+	background: linear-gradient(white, #dddddd);
+	padding: 20px;
+}
+
+#results img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-left: 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+}
+
+nav ul li a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Estilo para las secciones */
+section {
+	margin-top: 30px;
+}
+
+.section h2 {
+	font-size: 24px;
+	position: center;
+}
+
+section p {
+	line-height: 1.5;
+}
+
+.section-conocenos {
+	position: center;
+}
+
+.entrenadores-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.entrenador {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+.entrenador-nombre {
+	font-weight: bold;
+}
+
+.entrenador-especialidad {
+	font-style: italic;
+}
+
+.entrenador-horario {
+	font-size: 0.8em;
+}
+
+
+/* Estilo para la tabla */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 30px;
+}
+
+table th {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+}
+
+table td {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+/* Estilo para el pie de página */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.carousel-indicators {
+	bottom: 50%;
+	margin: 0;
+	transform: translateY(50%);
+	align-items: center;
+	justify-content: flex-start;
+	left: 25px;
+
+	.li {
+		width: 14px;
+		height: 14px;
+		opacity: 1;
+		background-color: transparent;
+		border: 2px solid primary;
+		border-radius: 100%;
+
+		&.active {
+			width: 18px;
+			height: 18px;
+			border: 3px solid primary;
+		}
+	}
+
+}
+
+/* SECCION CONTACTO */
+.contacto {
+	background-color: #202020;
+	padding: 140px 0 100px 0;
+	color: #e6e6e6;
+	text-align: center;
+}
+
+.contacto .contenido-seccion {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.contacto .contenido-seccion h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.contacto .contenido-seccion .fila {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contacto .contenido-seccion .fila .col {
+	margin-top: 50px;
+}
+
+.contacto .contenido-seccion .fila .col h2 {
+	color: #940253;
+}
+
+#Calculadora {
+
+	text-align: center;
+	font-weight: bold;
+	background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(32, 32, 32, 0.75));
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#conocenos {
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+
+}
