@@ -35,7 +35,7 @@
 					</li>
 					<li class="nav-item">
 						<a href="..//AllTIme/index.html" class="nav-link active" aria-current="page">Iniciar Sesión</a>
-						
+
 					</li>
 					<li class="nav-item">
 					</li>
@@ -87,7 +87,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="#">Historial de Rutas Recientes</a>
 							</li>
-							
+
 							<li class="nav-item">
 								<a class="nav-link" href="#">Preguntas Frecuentes</a>
 							</li>
@@ -191,8 +191,6 @@
 							<p class="card-text">Esta es una breve descripción de la rutas. <br>
 								*Se mostrará el horario de transporte*<br>
 								Estado: INACTIVO<br>
-								.
-
 							</p>
 						</div>
 					</div>
@@ -242,13 +240,33 @@
 									<li>
 										<hr class="dropdown-divider">
 									</li>
-									<li><a href="..//AllTIme/Mapa.html" class="dropdown-item" href="#">*Otra Opcion*</a></li>
+									<li><a href="..//AllTIme/Mapa.html" class="dropdown-item" href="#">*Otra Opcion*</a>
+									</li>
 								</ul>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+			<script async
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh8pllLg9ys1PV5wUftqr5WA1osxkeDK8&callback=initMap">
+			</script>
+		 <style>
+			#map {
+			  height: 100%;
+			}</section>style>
+		  <script>
+			const mapdiv = document.getElementById('map');
+			let map;
+		
+			function initMap() {
+			  map = new google.maps.Map(mapdiv, {
+				center: { lat: -34.397, lng: 150.644 },
+				zoom: 10
+			  });
+			  initMap();
+		  </script>
+			<div id="map"></div>
 		</section>
 
 		<a id="horarios"></a><br><br>
