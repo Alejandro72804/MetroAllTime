@@ -1,219 +1,106 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
+<<<<<<< HEAD <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Registro</title>
-    <style>
-        body {
-            background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-                url(./img/Registro.jpg) no-repeat center fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+        <title>Registro</title>
+        <style>
+            body {
+                background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+                    url(./img/Registro.jpg) no-repeat center fixed;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
 
-            font-family: 'Times New Roman', Times, serif;
+                font-family: 'Times New Roman', Times, serif;
 
-            margin: 0;
-            padding: 0;
+                margin: 0;
+                padding: 0;
 
-        }
-
-        .col-form-label {
-            max-width: 120px;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding-top: 50px;
-        }
-
-        h1 {
-            color: white;
-
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1 class="text-center">Formulario de Registro</h1>
-        <br><br><br>
-        <form onsubmit="return validarFormulario()" action="../CrudUser/Registro.php" method="POST">
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Nombre" id="nombreInput" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Apellido" id="apellidoInput" placeholder="Apellido">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Cedula" id="cedulaInput" placeholder="Cedula">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Contraseña" placeholder="Contraseña">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Correo" placeholder="Correo">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Celular" placeholder="Celular">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Direccion" placeholder="Direccion">
-            </div>
-
-            <div class="text-center">
-                <button type="submit" class="btn btn-outline-info">Enviar</button>
-                <button type="button" class="btn btn-outline-danger" onclick="cancelarFormulario()">Cancelar</button>
-            </div>
-        </form>
-    </div>
-
-    <script>
-        function validarFormulario() {
-            var nombre = document.getElementById("nombreInput").value;
-            var apellido = document.getElementById("apellidoInput").value;
-            var cedula = document.getElementById("cedulaInput").value;
-
-            if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
-                window.alert("Por favor, completa todos los campos obligatorios.");
-                return false;
-            }
-            window.alert("Registro realizado con éxito");
-            return true;
-        }
-
-        function cancelarFormulario() {
-            window.location.href = "./index.html";
-        }
-    </script>
-</body>
-
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Registro</title>
-    <style>
-        body {
-            background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-                url(./img/Registro.jpg) no-repeat center fixed;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-
-            font-family: 'Times New Roman', Times, serif;
-
-            margin: 0;
-            padding: 0;
-
-        }
-
-        .col-form-label {
-            max-width: 120px;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 0 auto;
-            padding-top: 50px;
-        }
-
-        h1 {
-            color: white;
-
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1 class="text-center">Formulario de Registro</h1>
-        <br><br><br>
-        <form onsubmit="return validarFormulario()" action="./index.html" method="POST">
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Nombre" id="nombreInput" placeholder="Nombre">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Apellido" id="apellidoInput" placeholder="Apellido">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Cedula" id="cedulaInput" placeholder="Cedula">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Correo" placeholder="Correo">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Celular" placeholder="Celular">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" name="Direccion" placeholder="Direccion">
-            </div>
-
-            <div class="text-center">
-                <button type="submit" class="btn btn-outline-info">Enviar</button>
-                <button type="button" class="btn btn-outline-danger" onclick="cancelarFormulario()">Cancelar</button>
-            </div>
-        </form>
-    </div>
-
-    <script>
-        function validarFormulario() {
-            var nombre = document.getElementById("nombreInput").value;
-            var apellido = document.getElementById("apellidoInput").value;
-            var cedula = document.getElementById("cedulaInput").value;
-
-            if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
-                window.alert("Por favor, completa todos los campos obligatorios.");
-                return false;
             }
 
-            var registro = {
-                Nombre: nombre,
-                Apellido: apellido,
-                Cedula: cedula,
-                Correo: correo,
-                Celular: celular,
-                Direccion: direccion
-            };
-            
-            window.alert("Registro realizado con éxito");
-            return true;
-        }
+            .col-form-label {
+                max-width: 120px;
+            }
 
-        function cancelarFormulario() {
-            window.location.href = "./index.html";
-        }
-    </script>
-</body>
+            .container {
+                max-width: 400px;
+                margin: 0 auto;
+                padding-top: 50px;
+            }
 
->>>>>>> 049abce9a34bd998b80713c8abb11b17a8be1fb1
-</html>
+            h1 {
+                color: white;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Formulario de Registro</h1>
+            <br><br><br>
+            <form onsubmit="return validarFormulario()" action="../CrudUser/Registro.php" method="POST">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="nombre" id="nombreInput" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="apellido" id="apellidoInput" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="cedula" id="cedulaInput" placeholder="Cedula">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="contrasena" placeholder="Contraseña">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="correo" placeholder="Correo">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="celular" placeholder="Celular">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="direccion" placeholder="Direccion">
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-outline-info">Enviar</button>
+                    <button type="button" class="btn btn-outline-danger"
+                        onclick="cancelarFormulario()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            function validarFormulario() {
+                var nombre = document.getElementById("nombreInput").value;
+                var apellido = document.getElementById("apellidoInput").value;
+                var cedula = document.getElementById("cedulaInput").value;
+
+                if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
+                    window.alert("Por favor, completa todos los campos obligatorios.");
+                    return false;
+                }
+                window.alert("Registro realizado con éxito");
+                return true;
+            }
+
+            function cancelarFormulario() {
+                window.location.href = "./index.html";
+            }
+        </script>
+    </body>
+
+    </html>
