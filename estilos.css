@@ -23,7 +23,7 @@ header h1 {
 
 body {
 	font-family: 'Times New Roman', Times, serif;
-
+	font-size: 16px;
 	align-items: center;
 }
 
@@ -32,7 +32,8 @@ body {
 	text-align: justify;
 
 }
-#results h1{
+
+#results h1 {
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
 }
@@ -118,31 +119,6 @@ section p {
 	position: center;
 }
 
-.entrenadores-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
-}
-
-.entrenador {
-	background-color: #f2f2f2;
-	border: 1px solid #ccc;
-	padding: 20px;
-}
-
-.entrenador-nombre {
-	font-weight: bold;
-}
-
-.entrenador-especialidad {
-	font-style: italic;
-}
-
-.entrenador-horario {
-	font-size: 0.8em;
-}
-
-
 /* Estilo para la tabla */
 table {
 	border-collapse: collapse;
@@ -195,48 +171,31 @@ footer {
 
 }
 
-/* SECCION CONTACTO */
-.contacto {
-	background-color: #202020;
-	padding: 140px 0 100px 0;
-	color: #e6e6e6;
-	text-align: center;
-}
-
-.contacto .contenido-seccion {
-	max-width: 1000px;
-	margin: auto;
-	padding: 0 10px;
-}
-
-.contacto .contenido-seccion h3 {
-	text-transform: uppercase;
-	font-size: 30px;
-}
-
-.contacto .contenido-seccion .fila {
-	display: flex;
-	justify-content: space-around;
-}
-
-.contacto .contenido-seccion .fila .col {
-	margin-top: 50px;
-}
-
-.contacto .contenido-seccion .fila .col h2 {
-	color: #940253;
-}
-
-#Calculadora {
-
-	text-align: center;
-	font-weight: bold;
-	background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(32, 32, 32, 0.75));
-	font-family: 'Times New Roman', Times, serif;
-}
 
 #conocenos {
 	text-align: center;
 	font-family: 'Times New Roman', Times, serif;
 
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    header {
+        padding: 5px;
+    }
+
+    .contenedor {
+        padding: 20px 0;
+    }
+
+    /* Agrega más reglas según sea necesario para otros elementos */
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho */
+    header h1 {
+        font-size: 18px;
+    }
+
+    /* Agrega más reglas según sea necesario para otros elementos */
 }
