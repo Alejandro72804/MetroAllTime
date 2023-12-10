@@ -14,6 +14,6 @@ $sql = "INSERT INTO Usuarios VALUES ($nombre,'$apellido',$contrasena,'$correo',$
 $query = mysqli_query($con, $sql) or die("No se pudo ingresar el registro");
 
 if ($query) {
-    Header("Location: ./index.html");
+    Header("Location: ../index.html");
 }
 
