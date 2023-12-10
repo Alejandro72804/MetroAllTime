@@ -1,12 +1,3 @@
-<?php
-include("../conexion.php");
-
-$con = conectar();
-$sql = "SELECT * FROM Usuarios";
-$query = mysqli_query($con, $sql);
-$row = mysqli_fetch_array($query);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,9 +63,6 @@ $row = mysqli_fetch_array($query);
                 <input type="text" class="form-control" name="Cedula" id="cedulaInput" placeholder="Cedula">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" name="Contraseña" placeholder="Contraseña">
-            </div>
-            <div class="mb-3">
                 <input type="text" class="form-control" name="Correo" placeholder="Correo">
             </div>
             <div class="mb-3">
@@ -101,7 +89,7 @@ $row = mysqli_fetch_array($query);
                 window.alert("Por favor, completa todos los campos obligatorios.");
                 return false;
             }
-            contrasena = password_hash($_POST['contrasena'], PASSWORD_BCRYPT);
+
             var registro = {
                 Nombre: nombre,
                 Apellido: apellido,
@@ -110,15 +98,7 @@ $row = mysqli_fetch_array($query);
                 Celular: celular,
                 Direccion: direccion
             };
-            $ID= $_POST["ID"];
-$Nombre= $_POST["Nombre"]; $Nombre= $_POST["Apellido"]; 
-$Contraseña= $_POST["Contraseña"];
-$Correo= $_POST["Correo"]; 
-$Direccion= $_POST["Direccion"]; 
-$Telefono= $_POST["Telefono"];
-
-$sql= "INSERT INTO Comprador VALUES ($ID,'$Nombre','$Correo',$Contraseña, $Telefono,'$Direccion')";
-$query= mysqli_query($con, $sql) or die("No se pudo ingresar el registro");
+            
             window.alert("Registro realizado con éxito");
             return true;
         }
