@@ -1,3 +1,4 @@
+<!DOCTYPE PHP>
 <?php
 include_once("../conexion.php");
 $con= conectar();
@@ -16,4 +17,4 @@ $query = mysqli_query($con, $sql) or die("No se pudo ingresar el registro");
 if ($query) {
     Header("Location: ../index.html");
 }
-
+?>
