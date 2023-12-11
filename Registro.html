@@ -52,7 +52,7 @@
     <div class="container">
         <h1 class="text-center">Formulario de Registro</h1>
         <br><br><br>
-        <form  onsubmit="return validarFormulario()" action="./CrudUser/Registro.php" method="POST">
+        <form onsubmit="return validarFormulario()" action="./CrudUser/Registro.php" method="POST">
             <div class="mb-3">
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
             </div>
@@ -63,7 +63,7 @@
                 <input type="text" class="form-control" name="cedula" id="cedula" placeholder="Cedula">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+                <input type="text" class="form-control" name="contrasena" placeholder="Contraseña">
             </div>
             <div class="mb-3">
                 <input type="text" class="form-control" name="correo" placeholder="Correo">
@@ -84,9 +84,9 @@
 
     <script>
         function validarFormulario() {
-            var nombre = document.getElementById("nombreInput").value;
-            var apellido = document.getElementById("apellidoInput").value;
-            var cedula = document.getElementById("cedulaInput").value;
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var cedula = document.getElementById("cedula").value;
 
             if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
                 window.alert("Por favor, completa todos los campos obligatorios.");
@@ -102,76 +102,4 @@
     </script>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-            .container {
-                max-width: 400px;
-                margin: 0 auto;
-                padding-top: 50px;
-            }
-
-            h1 {
-                color: white;
-
-            }
-        </style>
-    </head>
-
-    <body>
-        <div class="container">
-            <h1 class="text-center">Formulario de Registro</h1>
-            <br><br><br>
-            <form onsubmit="return validarFormulario()" action="./CrudUser/Registro.php" method="POST">
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="nombre" id="nombreInput" placeholder="Nombre">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="apellido" id="apellidoInput" placeholder="Apellido">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="cedula" id="cedulaInput" placeholder="Cedula">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="contrasena" placeholder="Contraseña">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="correo" placeholder="Correo">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="celular" placeholder="Celular">
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" name="direccion" placeholder="Direccion">
-                </div>
-
-                <div class="text-center">
-                    <button type="submit" class="btn btn-outline-info">Enviar</button>
-                    <button type="button" class="btn btn-outline-danger"
-                        onclick="cancelarFormulario()">Cancelar</button>
-                </div>
-            </form>
-        </div>
-
-        <script>
-            function validarFormulario() {
-                var nombre = document.getElementById("nombreInput").value;
-                var apellido = document.getElementById("apellidoInput").value;
-                var cedula = document.getElementById("cedulaInput").value;
-
-                if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
-                    window.alert("Por favor, completa todos los campos obligatorios.");
-                    return false;
-                }
-                window.alert("Registro realizado con éxito");
-                return true;
-            }
-
-            function cancelarFormulario() {
-                window.location.href = "./index.html";
-            }
-        </script>
-    </body>
-
-    </html>
->>>>>>> 034e47f367f722d91e496a7d2e910d2e72f49f8d
