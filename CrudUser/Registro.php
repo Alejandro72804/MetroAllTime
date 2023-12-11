@@ -1,6 +1,6 @@
 <!DOCTYPE PHP>
 <?php
-include_once("../conexion.php");
+include_once("./conexion.php");
 $con= conectar();
 
 $nombre = $_POST["nombre"];
@@ -15,10 +15,6 @@ $sql = "INSERT INTO Usuarios VALUES ($nombre,'$apellido',$contrasena,'$correo',$
 $query = mysqli_query($con, $sql) or die("No se pudo ingresar el registro");
 
 if ($query) {
-    Header("Location: ../index.html");
+    Header("Location: ./index.html");
 }
 ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> 034e47f367f722d91e496a7d2e910d2e72f49f8d
