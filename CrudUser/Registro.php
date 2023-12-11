@@ -1,3 +1,4 @@
+<!DOCTYPE PHP>
 <?php
 include_once("../conexion.php");
 $con= conectar();
@@ -17,4 +18,7 @@ if ($query) {
     Header("Location: ../index.html");
 }
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 034e47f367f722d91e496a7d2e910d2e72f49f8d
