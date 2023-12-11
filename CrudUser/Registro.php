@@ -10,10 +10,11 @@ $telefono = $_POST["telefono"];
 $direccion = $_POST["direccion"];
 
 
-$sql = "INSERT INTO Usuarios VALUES ($nombre,'$apellido',$contrasena,'$correo',$telefono,'$Direccion')";
+$sql = "INSERT INTO Usuarios VALUES ($nombre,'$apellido',$contrasena,'$correo',$telefono,'$direccion')";
 $query = mysqli_query($con, $sql) or die("No se pudo ingresar el registro");
 
 if ($query) {
     Header("Location: ../index.html");
 }
+?>
 
