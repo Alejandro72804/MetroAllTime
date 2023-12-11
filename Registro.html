@@ -52,7 +52,7 @@
     <div class="container">
         <h1 class="text-center">Formulario de Registro</h1>
         <br><br><br>
-        <form onsubmit="return validarFormulario()" action="./CrudUser/Registro.php" method="POST">
+        <form onsubmit="return validarFormulario()" action="./index.html" method="GET">
             <div class="mb-3">
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
             </div>
@@ -84,14 +84,15 @@
 
     <script>
         function validarFormulario() {
-            var nombre = document.getElementById("nombre").value;
-            var apellido = document.getElementById("apellido").value;
-            var cedula = document.getElementById("cedula").value;
+            var nombre = document.getElementById("nombreInput").value;
+            var apellido = document.getElementById("apellidoInput").value;
+            var cedula = document.getElementById("cedulaInput").value;
 
             if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
                 window.alert("Por favor, completa todos los campos obligatorios.");
                 return false;
             }
+
             window.alert("Registro realizado con éxito");
             return true;
         }
@@ -102,8 +103,4 @@
     </script>
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 01f1937853b28c798ac04396edf1cd31bc5f3b41
