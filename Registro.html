@@ -49,11 +49,10 @@
 </head>
 
 <body>
-    <div class="container">
+ <div class="container">
         <h1 class="text-center">Formulario de Registro</h1>
-      
-<<<<<<< HEAD
-        <form onsubmit="return validarFormulario()" action="./index.html" method="GET">
+        <br><br><br>
+        <form onsubmit="return validarFormulario()" action="./index.html" method="POST">
             <div class="mb-3">
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
             </div>
@@ -85,24 +84,14 @@
 
     <script>
         function validarFormulario() {
-            var nombre = document.getElementById("nombreInput").value;
-            var apellido = document.getElementById("apellidoInput").value;
-            var cedula = document.getElementById("cedulaInput").value;
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var cedula = document.getElementById("cedula").value;
 
             if (nombre.trim() === "" || apellido.trim() === "" || cedula.trim() === "") {
                 window.alert("Por favor, completa todos los campos obligatorios.");
                 return false;
             }
-
-            var registro = {
-                Nombre: nombre,
-                Apellido: apellido,
-                Cedula: cedula,
-                Correo: correo,
-                Celular: celular,
-                Direccion: direccion
-            };
-
             window.alert("Registro realizado con éxito");
             return true;
         }
@@ -110,6 +99,7 @@
         function cancelarFormulario() {
             window.location.href = "./index.html";
         }
+    </script>
     </script>
 </body>
 
