@@ -1,5 +1,7 @@
-MetroAllTime es un proyecto educativo en fase inicial, sin funcionalidades terminadas.
-
+>[!important]
+>MetroAllTime es un proyecto educativo en fase inicial, sin funcionalidades terminadas.
+>
+>
 # Metro All Time
 
 ## Descripción del Proyecto
